@@ -1,0 +1,232 @@
+/*Menu*/
+.wrapper{
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 1;
+}
+
+.wrapper .toggle{
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 2;
+  cursor: pointer;
+  height: 50px;
+  width: 50px;
+  opacity: 0;
+}
+
+.wrapper .hamburger{
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1;
+  height: 60px;
+  width: 60px;
+  background: var(--yellow);
+  opacity: 0.6; 
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.wrapper .hamburger > div{
+  position: relative;
+  background: var(--dark-grey);
+  height: 2px;
+  width: 100%;
+  flex: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.6s ease;
+}
+
+.wrapper .hamburger > div::before,
+.wrapper .hamburger > div::after{
+  content: '';
+  position: absolute;
+  background: inherit;
+  z-index: 1;
+  height: 2px;
+  width: 100%;
+  top: -10px;
+  transition: all 0.6s ease;
+}
+
+.wrapper .hamburger > div::before{
+  top: 10px;
+}
+
+.wrapper .toggle:hover + .hamburger > div{
+  background: var(--light-grey);
+}
+
+.wrapper .toggle:checked + .hamburger > div{
+  transform: rotate(135deg);
+}
+
+.wrapper .toggle:checked + .hamburger > div::before,
+.wrapper .toggle:checked + .hamburger > div::after{
+  transform: rotate(90deg);
+  top: 0;
+  transition: background 0.6s ease-in-out;
+}
+
+.wrapper .toggle:checked:hover + .hamburger > div{
+  transform: rotate(225deg);
+  background: var(--light-grey);
+}
+
+.wrapper .toggle:checked~.menu{
+  visibility: visible;
+  
+}
+
+.wrapper .toggle:checked~.menu > div{
+  transform: scale(1);
+  transition-duration: 1s;
+}
+
+.wrapper .toggle:checked~.menu > div > div{
+  opacity: 1;
+  transition: opacity 0.4 0.6s ease-in-out;
+}
+
+.wrapper .menu{
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  visibility: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.wrapper .menu > div{
+  background: var(--yellow);
+  border-radius: 50%;
+  height: 200vw;
+  width: 200vw;
+  flex: none;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  transform: scale(0);
+  transition: all 0.6s ease-in-out;
+}
+
+.wrapper .menu > div > div{
+  text-align: center;
+  max-width: 90vw;
+  max-height: 100vw;
+  opacity: 1;
+  transition: opacity 0.6s ease;
+}
+
+.wrapper .menu ul{
+  flex-direction: column;
+}
+
+.wrapper .menu > div > div ul li{
+  list-style: none;
+  padding: 1rem;
+  font-size: 1rem;
+}
+
+  .wrapper .menu > div > div ul li a{
+    text-decoration: none;
+    color: var(--dark-grey);
+    transition: color 0.6s ease;
+  }
+
+  .wrapper .menu > div > div ul li a:hover{
+    color: var(--light-grey);
+  }
+
+.color_panel{
+  border-radius: 10px;
+}
+
+.slideshow-container{
+  flex-direction: column;
+}
+
+.slideshow-container img{
+  height: 400px;
+  width: 400px;
+}
+
+.card_container,
+.product_card{
+  grid-template-columns: repeat(1, 1fr);
+}
+
+.general_header{
+  font-size: 2.5rem;
+}
+
+/*Produkt info*/
+.produkt-info_container button{
+  margin-right: 0.7rem;
+}
+
+/*Contact*/
+.grid_container{
+  grid-template-columns: repeat(1, 1fr);
+  gap: 2rem;
+}
+
+/*Winkelwagen*/
+.form_groep_checkout{
+  grid-template-columns: repeat(1, 1fr);
+}
+
+/*Klanchtenform*/
+.klacht_header{
+  font-size: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form_groep_klachten{
+  padding: 3rem 2rem;
+}
+
+/*login*/
+.login_container form{
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  padding-left: 4rem;
+}
+
+.footer_container{
+  grid-template-columns: repeat(1, 1fr);
+}
+
+.footer_container h2,
+.produkten,
+.klanten_service,
+.voorwaarden{
+  padding: 1rem;
+}
+
+.produkt-info_container{
+  grid-template-columns: repeat(1, 1fr);
+}
+
+.produkt-info_container p{
+  margin-right: 0;
+  padding: 1.5rem;
+}
+
+
+
+
+

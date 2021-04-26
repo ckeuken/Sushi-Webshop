@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" media="screen and (max-width: 768px)" href="mobile.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js" defer></script>
+  <script src="app.js" defer></script>
+  <title>Welkom</title>
+</head>
+<body>
+  <header>
+
+    <div class="icons_container">
+      <div class="icons">
+        <a href="login.html" target="_blank"><i class="fas fa-user fa-2x"></i></a>
+        <a href="checkout_form.html" target="_blank"><i class="fas fa-shopping-cart fa-2x"></i></a>
+      </div>
+    </div>
+   
+    <div class="logo_container">
+      <figure>
+        <img src="./images/logo.jpg" alt="logo">
+        <figcaption>Company slogan or text</figcaption>
+      </figure>
+    </div>
+   
+    <div class="search-bar_container">
+      <form class="search-bar" action="">
+        <input type="text" placeholder="Zoeken...">
+        <button type="submit"><i class="fa fa-search"></i></button>
+      </form>
+    </div>
+  
+    <div class="wrapper">
+      <input type="checkbox" class="toggle">
+  
+      <div class="hamburger"><div></div></div>
+  
+      <div class="menu">
+        <div>
+          <div>
+            <ul>
+              <li><a href="index.html" class="current"><i class="fas fa-home fa-2x"></i></a></li>
+              <li><a href="tamago.html">Tamago</a></li>
+              <li><a href="temaki.html">Temaki</a></li>
+              <li><a href="unagi.html">Unagi</a></li>
+              <li><a href="ebi.html">Ebi</a></li>
+              <li><a href="chu.html">Chu maki</a></li>
+              <li><a href="sushiboxen.html">Sushiboxen</a></li>
+              <br>
+              <li><a href="informatie.html">Informatie</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+      <div class="color_panel">
+        <div class="slideshow-container">
+          <div class="mySlides fade">
+            <img src="./images/slider_header.jpg" alt="slider_header">
+          </div>
+          <div class="mySlides fade">
+            <img src="./images/slider_sushi.jpg" alt="slider_sushi">
+          </div>
+          <div class="mySlides fade">
+            <img src="./images/slider_slogan.jpg" alt="slider_slogan">
+          </div>
+      </div>
+</header>
+
+<section>
+  <div class="card_container">
+    <div class="product_card">
+      <a href="tamago.html" target="_blank"><img src="./images/tamago.jpg" alt="tamago"></a>
+      <div class="content">
+        <h3>Tamago</h3>
+        <p>Tamagoyaki is een soort Japanse omelet, die wordt gemaakt door verschillende lagen gebakken ei samen te rollen. Deze worden vaak bereid in een rechthoekige omeletpan genaamd makiyakinabe of tamagoyakiki.
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+        </p>
+  
+        <a href="tamago.html">Lees meer over Tamago</a>
+        
+        <div class="aantallen">
+          <div class="menu">
+            <label for="aantal">Aantal</label>
+        <select name="aantal" id="aantal">
+          <option class="hoeveelheid" value="1">1</option>
+          <option value="3">3</option>
+          <option value="5">5</option>
+          <option value="7">7</option>
+          <option value="9">9</option>
+          <option value="12">12</option>
+        </select>
+          </div>
+        <div class="prijs">€1.55 p.st.</div>
+        </div>
+      
+        <button type="submit"><a href="checkout_form.html" target="_blank"><i class="fas fa-shopping-cart fa-2x"></i></a></button>
+      </div>
+    </div>
+  
+    <div class="product_card">
+      <a href="temaki.html"><img src="./images/te-maki-rol.jpg" alt="temaki rol"></a>
+      <div class="content">
+        <h3>Temaki Rol</h3>
+        <p>Temaki is een sushi handrol in de vorm van een hoorntje, gevuld met sushirijst en andere lekkere ingrediënten
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque adipisci neque nemo eum exercitationem quibusdam corrupti assumenda ratione totam eligendi!
+        </p>
+  
+        <a href="temaki.html">Lees meer over te-maki</a>
+  
+        <div class="aantallen">
+          <div class="menu">
+            <label for="aantal">Aantal</label>
+        <select name="aantal" id="aantal" onclick="selectOption()">
+          <option value="1" class="hoeveelheid">1</option>
+          <option value="3">3</option>
+          <option value="5">5</option>
+          <option value="7">7</option>
+          <option value="9">9</option>
+          <option value="12">12</option>
+        </select>
+          </div>
+        <div class="prijs">€2.10 p.st.</div>
+        </div>
+      
+        <button type="submit"><a href="checkout_form.html" target="_blank"><i class="fas fa-shopping-cart fa-2x"></i></a></button>
+      </div>
+    </div>
+  
+    <div class="product_card">
+      <a href="unagi.html"><img src="./images/unagi.jpg" alt="unagi"></a>
+      <div class="content">
+        <h3>Unagi</h3>
+        <p>Sushi van paling en komkommer.
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi voluptatem perspiciatis quidem in iure non sit fugiat quis fugit mollitia?
+        </p>
+  
+        <a href="unagi.html">Lees meer over unagi</a>
+  
+        <div class="aantallen">
+          <div class="menu">
+            <label for="aantal">Aantal</label>
+        <select name="aantal" id="aantal">
+          <option value="1">1</option>
+          <option value="3">3</option>
+          <option value="5">5</option>
+          <option value="7">7</option>
+          <option value="9">9</option>
+          <option value="12">12</option>
+        </select>
+          </div>
+        <div class="prijs">€2.13 p.st.</div>
+        </div>
+      
+        <button type="submit"><a href="checkout_form.html" target="_blank"><i class="fas fa-shopping-cart fa-2x"></i></a></button>
+      </div>
+    </div>
+  
+    <div class="product_card">
+      <a href="ebi.html"><img src="./images/ebi.jpg" alt="ebi"></a>
+      <div class="content">
+        <h3>Ebi</h3>
+        <p>Heerlijk hartige Tempura garnalen in combinatie met de romige, zachte avocado, de zoutige viseitjes en de frisse Japanse mayonaise.
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste itaque a porro ea iusto fugit, distinctio quaerat eius facilis voluptatum?
+        </p>
+  
+        <a href="ebi.html">Lees meer over ebi</a>
+  
+        <div class="aantallen">
+          <div class="menu">
+            <label for="aantal">Aantal</label>
+        <select name="aantal" id="aantal">
+          <option value="1">1</option>
+          <option value="3">3</option>
+          <option value="5">5</option>
+          <option value="7">7</option>
+          <option value="9">9</option>
+          <option value="12">12</option>
+        </select>
+          </div>
+        <div class="prijs">€1.90 p.st.</div>
+        </div>
+      
+        <button type="submit"><a href="checkout_form.html" target="_blank"><i class="fas fa-shopping-cart fa-2x"></i></a></button>
+      </div>
+    </div>
+  
+    <div class="product_card">
+      <a href="chu.html"><img src="./images/chu maki-rol.jpg" alt="chu maki-rol"></a>
+      <div class="content">
+        <h3>Chu maki-rol</h3>
+        <p>Sushirol met tonijn.
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas reprehenderit velit error officiis maiores? Esse dicta vel modi. Similique, error!
+        </p>
+  
+        <a href="chu.html">Lees meer over Chu maki</a>
+  
+        <div class="aantallen">
+          <div class="menu">
+            <label for="aantal">Aantal</label>
+        <select name="aantal" id="aantal">
+          <option value="1">1</option>
+          <option value="3">3</option>
+          <option value="5">5</option>
+          <option value="7">7</option>
+          <option value="9">9</option>
+          <option value="12">12</option>
+        </select>
+          </div>
+        <div class="prijs">€1.95 p.st.</div>
+        </div>
+      
+        <button type="submit"><a href="checkout_form.html" target="_blank"><i class="fas fa-shopping-cart fa-2x"></i></a></button>
+      </div>
+    </div>
+
+    <div class="product_card">
+      <a href="sushiboxen.html"><img src="./images/sushi_boxen.jpg" alt="sushiboxen"></a>
+      <div class="content">
+        <h3>Sushi-boxen</h3>
+        <p>Sushiboxen met heerlijke versgemaakte sushi. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis accusamus, itaque quasi deleniti neque molestiae officiis maiores! Non, quasi ex debitis molestiae corporis vel tenetur quidem optio, alias laborum temporibus!
+        </p>
+  
+        <button><a href="sushiboxen.html">Naar sushiboxen</a></button>
+
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<footer>
+<div class="footer_container">
+  <h2>Sitemap</h2>
+  <div class="produkten">
+    <a href="tamago.html" target="_blank">Tamago</a>
+    <a href="temaki.html" target="_blank">Temaki</a>
+    <a href="unagi.html" target="_blank">Unagi</a>
+    <a href="ebi.html" target="_blank">Ebi</a>
+    <a href="chu.html" target="_blank">Chu maki</a>
+    <a href="sushiboxen.html">Sushiboxen</a>
+  </div>
+ 
+  <div class="klanten_service">
+    <a href="informatie.html" target="_blank">Informatie</a>
+    <a href="prijzen.html" target="_blank">Prijzen</a>
+    <a href="contact.html" target="_blank">Contact</a>
+  </div>
+ 
+  <div class="voorwaarden">
+  <a href="privacypol.html" target="_blank">Privacy Policy</a>
+  <a href="algemenevoorwaarden.html" target="_blank">Algemene Voorwaarden</a>
+  <a href="klachten.html" target="_blank">Klachten</a>
+  </div>
+  
+</div>
+</footer>
+
+<div class="sub_footer">
+  <div class="social">
+    <a href="http://linkedin.com" target="_blank"><i class="fab fa-linkedin fa-2x"></i></a>
+    <a href="http://facebook.com" target="_blank"><i class="fab fa-facebook fa-2x"></i></a>
+    <a href="http://twitter.com" target="_blank"><i class="fab fa-twitter fa-2x"></i></a>
+    <a href="http://youtube.com" target="_blank"><i class="fab fa-youtube fa-2x"></i></a>
+    <a href="http://instagram.com" target="_blank"><i class="fab fa-instagram fa-2x"></i></a>
+  </div>
+</div>
+</body>
+</html>

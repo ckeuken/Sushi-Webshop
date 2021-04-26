@@ -1,0 +1,47 @@
+.algemenevw_container,
+.informatie_container,
+.prijzen_container,
+.privacypol_container{
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
+
+.algemenevw_container li,
+.privacypol_container li{
+  list-style: inside;
+  list-style-type: decimal;
+  padding: 0.5rem;
+}
+
+.informatie_container ul{
+  align-self: flex-start;
+  padding-top: 1rem;
+}
+
+.betaalmethoden .fa-ideal{
+  color: rgb(204, 0, 102);
+}
+
+.betaalmethoden .fa-credit-card{
+  color: rgb(160, 163, 169);
+}
+
+.algemenevw_container h2,
+.informatie_container h2,
+.prijzen_container h2,
+.prijzen_container h3{
+  align-self: flex-start;
+  padding-top: 1rem;
+}
+
+.informatie_container .betaalmethoden li i{
+  padding: 0 0.5rem;
+}
+
+.informatie_container button,
+.prijzen_container button,
+.privacypol_container button{
+  margin-top: 1rem;
+}
+

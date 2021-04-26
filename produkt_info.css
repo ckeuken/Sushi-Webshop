@@ -1,0 +1,36 @@
+.produkt_header{
+  padding: 2.1rem;
+  font-size: 3.5rem;
+}
+
+.produkt-info_container{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 1rem;
+}
+
+img{
+  margin-left: 2rem;
+  width: 80%;
+  transition: opacity 0.6s ease-in-out;
+}
+
+img:hover{
+  opacity: 0.6;
+}
+
+p{
+  margin-right: 12rem;
+}
+
+.produkt-info_container button{
+  margin-top: 3rem;
+  margin-right: 5rem;
+  padding: 1rem;
+}
+
+
+
+
+
+
